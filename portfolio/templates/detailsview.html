@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Verdana', sans-serif;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0982fc;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3880fe;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        td {
+            background-color: #e6f7f3;
+            font-size: 1.1rem;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #07cdf9;
+        }
+
+        tr:hover td {
+            background-color: #c0e6d7;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a9cfe;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>User Profile</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Bio</th>
+                <th>Certification Name</th>
+                <th>Certification Link</th>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Years of Experience</th>
+                <th>Project Name</th>
+                <th>Project Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.bio }}</td>
+                <td>{{ user.certification_name }}</td>
+                <td>{{ user.certification_link }}</td>
+                <td>{{ user.company }}</td>
+                <td>{{ user.role }}</td>
+                <td>{{ user.years_of_experience }}</td>
+                <td>{{ user.project_name }}</td>
+                <td>{{ user.project_link }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>
